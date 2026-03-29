@@ -74,6 +74,16 @@ public class MedSistem {
         return null;
     }
 
+    public boolean verifyCNP(String cnp){
+        for(Cetatean p : pacient){
+            if(cnp.equals(p.getCNP())){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public void afisarePacienti(){
         System.out.printf("Pacientii inregistrati sunt: ");
 

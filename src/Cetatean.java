@@ -15,6 +15,8 @@ public class Cetatean {
 
     public String getNume() {return nume;}
 
+    public String getCNP() {return cnp;}
+
     public Identificator getId() { return id; }
 
     Cetatean(String nume){
