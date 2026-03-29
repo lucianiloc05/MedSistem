@@ -40,8 +40,16 @@ public class MedSistem {
         System.out.println("Eroare activare");
     }
 
-    public void gestionarePermisuneAcces(PermisiuneAcces perm){
-        //?
+    /**
+     * Nivel = Privat, Doctor, Public
+     *
+     */
+    public void gestionarePermisuneAcces(String nume, String nivel){
+        Cetatean C = getPacientbyName(nume);
+
+        if(nivel == "Doctor") C.getId().setNivel(1);
+        else if(nivel == "Public") C.getId().setNivel(0);
+        else C.getId().setNivel(-1);
     }
 
     public Cetatean getPacientbyName(String input){

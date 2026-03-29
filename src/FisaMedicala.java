@@ -3,10 +3,10 @@ import java.util.Date;
 
 public class FisaMedicala {
 
-    Long id;
-    Date dataCreare;
-    String titlu;
-    String continut;
+    private Long id;
+    private Date dataCreare;
+    private String titlu;
+    private String continut;
 
     FisaMedicala(String titlu, String continut){
 
